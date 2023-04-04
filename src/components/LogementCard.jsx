@@ -1,6 +1,6 @@
-import '../styles/LogementFiche.css'
+import '../styles/LogementCard.css'
 
-function LogementFiche ( {locTitle, locID, locImage} ) {
+function LogementCard ( {locTitle, locID, locImage} ) {
 	return (
 		<div className="logement-item">
 			<h3 className="logement-item-titre">{locTitle}</h3>
@@ -9,4 +9,4 @@ function LogementFiche ( {locTitle, locID, locImage} ) {
 	);
 }
 
-export default LogementFiche
+export default LogementCard

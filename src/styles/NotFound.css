@@ -1,0 +1,29 @@
+.not-found-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ff6060;
+}
+
+.not-found-404 {
+	margin: 160px 0 0 0;
+	font-weight: 700;
+	font-size: 288px;
+}
+
+.not-found-text {
+	font-weight: 500;
+	font-size: 36px;
+}
+
+.not-found-link {
+	margin-top: 100px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+	color: #ff6060;
+}
+
+.not-found-link:hover {
+	text-decoration: underline;
+}

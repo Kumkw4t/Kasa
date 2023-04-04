@@ -1,0 +1,39 @@
+.collapse {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.collapse-title {
+	background-color: #FF6060;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 0;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.collapse-body {
+	background-color: #F7F7F7;
+	color: #ff6060;
+	border-radius: 5px;
+	padding: 30px 20px 20px 20px;
+}
+
+.collapse-body p {
+	margin: 0;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.collapse-chevron {
+	position: absolute;
+	left: 95%;
+	top: 18px;
+}
+
+.collapse-chevron:hover {
+	cursor: pointer;
+}
