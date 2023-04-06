@@ -17,7 +17,9 @@ function Home() {
       <Banner bannerImg={imageHome} bannerText={texteHome}/>
       <div className="logement-container">
       {logList.map((logement) => (
+        <Link key={`link${logement.id}`} to={`/fiche_logement/${logement.id}`}>
         <LogementCard key={logement.id} locTitle={logement.title} locID={logement.id} locImage={logement.cover} />
+        </Link>
       ))}
      </div>
     </div>

@@ -17,10 +17,10 @@ function APropos () {
 		<div className="a-propos">
 			<Banner bannerImg={imageAPropos} bannerText={texteAPropos} />
 			<div className="a-propos-body">
-				<Collapse collapseTitre="Fiabilité" collapseTexte={texteFiabilite} />
-				<Collapse collapseTitre="Respect" collapseTexte={texteRespect} />
-				<Collapse collapseTitre="Service" collapseTexte={texteService} />
-				<Collapse collapseTitre="Sécurité" collapseTexte={texteSecurite} />
+				<Collapse collapseTitre="Fiabilité" collapseContent={texteFiabilite} collapseType="texte" />
+				<Collapse collapseTitre="Respect" collapseContent={texteRespect} collapseType="texte" />
+				<Collapse collapseTitre="Service" collapseContent={texteService} collapseType="texte" />
+				<Collapse collapseTitre="Sécurité" collapseContent={texteSecurite} collapseType="texte" />
 			</div>
 		</div>
 	);
