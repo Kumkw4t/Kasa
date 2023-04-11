@@ -8,15 +8,12 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 210px;
-/*	padding: 60px 0 30px 0;*/
-/*	margin-top: 40px;*/
 }
 
 .footer-text {
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 1.15em;
 	color: #fff;
-
 }
 
 .footer-logo {

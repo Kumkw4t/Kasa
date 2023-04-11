@@ -9,6 +9,5 @@
   padding: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 60px;
+  gap: 50px;
 }

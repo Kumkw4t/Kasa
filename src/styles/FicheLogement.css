@@ -1,0 +1,95 @@
+.location-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.location-title-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.location-title, .location-location {
+	color: #ff6060;
+	font-weight: 500;
+	margin: 0;
+}
+
+.location-title {
+	font-size: 1.7em;
+	overflow-wrap: normal;
+}
+
+.location-location {
+	font-size: 0.9em;
+}
+
+.tags-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.tag {
+	display: flex;
+	align-items: center;
+	height: 25px;
+	background-color: #ff6060;
+	border-radius: 10px;
+	font-size: 0.7em;
+	font-weight: 500;
+	color: #fff;
+	padding: 0 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 30%;
+}
+
+.location-host-review {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-right: 10px;
+}
+
+.location-host {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-size: 0.9em;
+	font-weight: 500;
+	color: #ff6060;
+}
+
+.host-name {
+	word-spacing: 500px;
+	text-align: right;
+}
+
+.host-picture {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.location-review {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.star-review {
+	width: 25px;
+	height: 25px;
+}
+
+.location-collapse-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+}

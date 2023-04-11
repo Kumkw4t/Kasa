@@ -12,7 +12,7 @@
 
 .header-nav {
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 1.15em;
 	display: flex;
 	flex-direction: row;
 	gap: 60px;
