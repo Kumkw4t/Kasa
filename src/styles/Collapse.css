@@ -30,7 +30,7 @@
 	opacity: 0;
 	max-height: 0;
 	padding: 0 20px;
-	transition: opacity 1.5s, max-height 1.5s ease, padding 1.5s;
+	transition: opacity 0.5s, max-height 0.5s ease, padding 0.5s;
 }
 
 .collapse-open.collapse-body {
@@ -45,7 +45,7 @@
 	list-style: none;
 	max-height: 0;
 	opacity: 0;
-	transition: opacity 0.7s ease-in, max-height 1.5s ease;
+	transition: opacity 0.3s ease-in, max-height 0.5s ease;
 }
 
 .collapse-open.collapse-body p, .collapse-open.collapse-body ul {

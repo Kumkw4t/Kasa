@@ -8,6 +8,7 @@
 .location-title-box {
 	display: flex;
 	flex-direction: column;
+	min-width: 75%;
 }
 
 .location-title, .location-location {
@@ -18,7 +19,6 @@
 
 .location-title {
 	font-size: 1.7em;
-	overflow-wrap: normal;
 }
 
 .location-location {
@@ -66,7 +66,7 @@
 }
 
 .host-name {
-	word-spacing: 600px;
+	word-spacing: 1000px;
 	text-align: right;
 }
 
@@ -101,6 +101,7 @@
 
 	.location-title {
 		font-size: 1.1em;
+		overflow-wrap: normal;
 	}
 	.location-location {
 		font-size: 0.8em;
