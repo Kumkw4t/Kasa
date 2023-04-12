@@ -1,4 +1,5 @@
-import {useParams} from 'react-router-dom'
+import {useParams,useNavigate} from 'react-router-dom'
+import {useEffect} from 'react'
 
 import Slideshow from '../components/Slideshow'
 import Collapse from '../components/Collapse'
@@ -13,9 +14,18 @@ function FicheLogement () {
 
 	const { logementId } = useParams();
 	const logement = logList.find( (element) => element.id === logementId);
+	const idExists = (logement === undefined ? false : true);
+	const navigate = useNavigate();
+
+	useEffect (() => {
+		if (!idExists) {
+			(navigate("/not-found"));
+		}
+	}, [logement]);
 
 	return (
-		
+		<div>
+		{ idExists &&
 		<div>
 			<Slideshow locImages={logement.pictures} />
 			<div className="location-header">
@@ -43,7 +53,8 @@ function FicheLogement () {
 				<Collapse collapseTitre="Description" collapseContent={logement.description} collapseType="texte" />
 				<Collapse collapseTitre="Equipements" collapseContent={logement.equipments} collapseType="liste" />
 			</div>
-
+		</div>
+		}
 		</div>
 	);
 }
