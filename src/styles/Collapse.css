@@ -7,6 +7,11 @@
 	transition: 1s slidein;
 }
 
+.collapse-title-bar {
+	width: 100%;
+	position: relative;
+}
+
 .collapse-title {
 	background-color: #FF6060;
 	border-radius: 5px;
@@ -59,9 +64,23 @@
 .collapse-chevron {
 	position: absolute;
 	right: min(5%,20px);
-	top: 18px;
+	top: calc(50% - 7px);
 }
 
 .collapse-chevron:hover {
 	cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+	.a-propos-body .collapse-body {
+		font-size: 0.9em;
+	}
+
+	.collapse-title {
+		font-size: 1em;
+	}
+
+	.collapse-body ul {
+		padding: 0;
+	}
 }

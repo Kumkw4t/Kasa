@@ -12,11 +12,13 @@ function Collapse ( {collapseTitre, collapseContent, collapseType}) {
 
 	return (
 		<div className="collapse">
+			<div className="collapse-title-bar">
 			<h3 className="collapse-title">{collapseTitre}</h3>
 			{ open ? (<img className="collapse-chevron" src={chevronHaut} alt="chevron haut" onClick={toggle} />)
 			:
 			(<img className="collapse-chevron" src={chevronBas} alt="chevron bas" onClick={toggle} />)
 			}
+			</div>
 			{ (collapseType === 'texte') && (open ? <div className="collapse-body collapse-open"><p>{collapseContent}</p></div> : <div className="collapse-body"><p>{collapseContent}</p></div>)}
 			{ (collapseType === 'liste') && (open ?
 				(<div className="collapse-body collapse-open"><ul>

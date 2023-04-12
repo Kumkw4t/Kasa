@@ -35,3 +35,20 @@
 	color: #fff;
 	overflow-wrap: break-word;
 }
+
+@media (max-width: 1023px) {
+	.logement-item-titre {
+		font-size: 0.7em;
+		padding: 5%;
+	}
+}
+
+@media (max-width: 767px) {
+	.logement-item-titre {
+		font-size: 1.1em;
+	}
+
+	.logement-item {
+		height: 220px;
+	}
+}

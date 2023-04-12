@@ -45,7 +45,6 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-width: 30%;
 }
 
 .location-host-review {
@@ -67,7 +66,7 @@
 }
 
 .host-name {
-	word-spacing: 500px;
+	word-spacing: 600px;
 	text-align: right;
 }
 
@@ -92,4 +91,57 @@
 	display: flex;
 	flex-direction: row;
 	gap: 5%;
+}
+
+@media (max-width: 1023px) {
+	.location-header {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.location-title {
+		font-size: 1.1em;
+	}
+	.location-location {
+		font-size: 0.8em;
+		padding-top: 10px;
+	}
+
+	.tags-wrapper {
+		margin-top: 10px;
+	}
+
+	.tag {
+		padding: 0 2%;
+		font-size: 0.6em;
+		border-radius: 5px;
+		height: 18px;
+	}
+
+	.location-host-review {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.host-picture {
+		width: 32px;
+		height: 32px;
+	}
+
+	.host-name {
+		font-size: 0.8em;
+	}
+	.location-review {
+		gap: 7px;
+	}
+
+	.star-review {
+		width: 14px;
+		height: 14px;
+	}
+
+	.location-collapse-wrapper {
+		flex-direction: column;
+		gap: 20px;
+	}
 }

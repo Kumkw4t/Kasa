@@ -1,5 +1,3 @@
-import '../styles/Banner.css'
-
 function Banner ({bannerImg, bannerText}) {
 
 	return (

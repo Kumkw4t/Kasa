@@ -26,3 +26,20 @@
 .header-nav-link:hover {
 	text-decoration: underline;
 }
+
+@media (max-width: 1023px) {
+
+	.kasa-header {
+		padding: 20px 0;
+	}
+
+	.kasa-logo-header {
+		width: 40%;
+	}
+
+	.header-nav {
+		gap: 15px;
+		font-size: 0.7em;
+		text-transform: uppercase;
+	}
+}

@@ -27,3 +27,24 @@
 .not-found-link:hover {
 	text-decoration: underline;
 }
+
+@media (max-width: 1023px) {
+	.not-found-404 {
+		font-size: 10em;
+	}
+
+	.not-found-text {
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.not-found-link {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 767px) {
+	.not-found-404 {
+		font-size: 7em;
+	}
+}

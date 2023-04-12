@@ -19,3 +19,18 @@
 .footer-logo {
 	margin-top: 70px;
 }
+
+@media (max-width: 767px) {
+	.footer-text {
+		font-size: 0.7em;
+	}
+
+	.footer {
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.footer-logo {
+		margin-top: 0;
+	}
+}
