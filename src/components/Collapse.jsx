@@ -17,12 +17,14 @@ function Collapse ( {collapseTitre, collapseContent, collapseType}) {
 			:
 			(<img className="collapse-chevron" src={chevronBas} alt="chevron bas" onClick={toggle} />)
 			}
-			{ open && ( collapseType === 'texte' ? <div className="collapse-body"><p>{collapseContent}</p></div> : null )}
-			{ open && ( collapseType === 'liste' ?
-				(<div className="collapse-body"><ul>
+			{ (collapseType === 'texte') && (open ? <div className="collapse-body collapse-open"><p>{collapseContent}</p></div> : <div className="collapse-body"><p>{collapseContent}</p></div>)}
+			{ (collapseType === 'liste') && (open ?
+				(<div className="collapse-body collapse-open"><ul>
 					{collapseContent.map( (equipement,i) => <li key={`equip-${i}`}>{equipement}</li>)}
-				</ul></div>) 
-			: null )}
+				</ul></div>)
+			: (<div className="collapse-body"><ul>
+					{collapseContent.map( (equipement,i) => <li key={`equip-${i}`}>{equipement}</li>)}
+				</ul></div>))}
 		</div>
 	);
 }
