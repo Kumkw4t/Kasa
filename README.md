@@ -4,7 +4,7 @@
 
 La structure des routes se situe dans le fichier src/index.js
 
-## application React
+## Application React
 
 Le projet est organisé selon la structure suivante :
 - assets : contient les images, logo et icones du projet
