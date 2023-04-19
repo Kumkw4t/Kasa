@@ -3,6 +3,7 @@ import {useEffect} from 'react'
 
 import Slideshow from '../components/Slideshow'
 import Collapse from '../components/Collapse'
+import StarRating from '../components/StarRating'
 
 import '../styles/FicheLogement.css'
 
@@ -42,10 +43,7 @@ function FicheLogement () {
 						<div className="host-name">{logement.host.name}</div>
 						<img className="host-picture" src={logement.host.picture} alt="photographie de l'hôte" />
 					</div>
-					<div className="location-review">
-						{Array(parseInt(logement.rating,10)).fill(0).map((_,i) => <img key={`star-full${i}`} src={starFull} alt="étoile pleine" className="star-review star-full" />)}
-						{Array(parseInt(5-logement.rating,10)).fill(0).map((_,i) => <img key={`star-empty${i}`} src={starEmpty} alt="étoile vide" className="star-review star-empty" />)}
-					</div>
+					<StarRating rating={logement.rating} ratingMax={5} />
 				</div>
 			</div>
 

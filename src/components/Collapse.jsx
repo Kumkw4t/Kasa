@@ -19,7 +19,8 @@ function Collapse ( {collapseTitre, collapseContent, collapseType}) {
 			(<img className="collapse-chevron" src={chevronBas} alt="chevron bas" onClick={toggle} />)
 			}
 			</div>
-			{ (collapseType === 'texte') && (open ? <div className="collapse-body collapse-open"><p>{collapseContent}</p></div> : <div className="collapse-body"><p>{collapseContent}</p></div>)}
+			{ (collapseType === 'texte') && (open ? <div className="collapse-body collapse-open"><p>{collapseContent}</p></div> 
+				: <div className="collapse-body"><p>{collapseContent}</p></div>)}
 			{ (collapseType === 'liste') && (open ?
 				(<div className="collapse-body collapse-open"><ul>
 					{collapseContent.map( (equipement,i) => <li key={`equip-${i}`}>{equipement}</li>)}
